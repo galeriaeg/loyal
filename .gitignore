@@ -1,0 +1,8 @@
+config/
+.env
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+assets/img/*
+!assets/img/.gitkeep
