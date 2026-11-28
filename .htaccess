@@ -1,0 +1,28 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{http_host} ^dominio.com [NC]
+RewriteRule ^(.\*)$ http://www.multprivate.com.br/$1 [R=301,L]
+
+#RewriteEngine On
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteCond %{SCRIPT_FILENAME} !-d
+
+### PAGINAS PUBLICAS
+
+RewriteRule ^login/?$ index.php [NC,L]
+RewriteRule ^auth/?$ auth.php [NC,L]
+RewriteRule ^recuperar-senha/?$ recuperar-senha.php [NC,L]
+RewriteRule ^produto/?$ pages/produto.php [NC,L]
+RewriteRule ^produtos-marca/?$ pages/produtos-marca.php [NC,L]
+RewriteRule ^produtos-linha/?$ pages/produtos-linha.php [NC,L]
+RewriteRule ^produtos-mod/?$ pages/produtos-mod.php [NC,L]
+RewriteRule ^busca/?$ pages/busca.php [NC,L]
+RewriteRule ^novidades/?$ pages/novidades.php [NC,L]
+RewriteRule ^novidade/?$ pages/novidade.php [NC,L]
+RewriteRule ^eventos/?$ pages/eventos.php [NC,L]
+RewriteRule ^contatos/?$ pages/contatos.php [NC,L]
+RewriteRule ^contato/?$ pages/contato.php [NC,L]
+RewriteRule ^envia-contato/?$ pages/envia_contato.php [NC,L]
+RewriteRule ^clientes/?$ pages/clientes.php [NC,L]
+
+#ErrorDocument 404 https://www.mid.med.br/website/404/

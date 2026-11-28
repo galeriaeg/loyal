@@ -1,10 +1,11 @@
 body {
-  background-color: #eee;
+  background-color: #ebedf1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
   --cor-primaria: #0b57d0;
+  --cor-secundaria: #03a9f4;
 }
 
 h1 {
@@ -16,14 +17,19 @@ h3 {
 }
 h4 {
   font-size: 1rem !important;
+  margin: 0;
 }
 h5 {
   font-size: 0.8rem !important;
   color: var(--cor-primaria);
+  margin: 0;
 }
 
 summary {
   color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /******** MARGIN *********/
@@ -131,18 +137,33 @@ summary {
 .box-id-user {
   float: right;
   padding: 5px;
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
   color: #fff;
   border-radius: 5px;
 }
 
 .card {
-  padding: 10px;
+  padding: 10px 12px;
   background-color: #fff;
   color: #444;
   border-radius: 6px;
   line-height: 22px;
   font-size: 0.8rem;
+}
+
+.card-premio {
+  background-color: #b6ffb8;
+  background-size: cover;
+  padding: 10px;
+  color: #06800b;
+  border-radius: 6px;
+  line-height: 22px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url("../img/bg-premio.png");*/
+  font-weight: 600;
 }
 
 .tag-status {
@@ -184,6 +205,19 @@ summary {
   width: 100px;
   border: 5px solid #fff;
   border-radius: 15%;
+}
+
+.icon-arrow {
+  height: 14px;
+  float: right;
+  rotate: 90deg;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(45%) saturate(588%)
+    hue-rotate(154deg) brightness(82%) contrast(170%);
+}
+
+.icon-premio {
+  height: 20px;
+  margin: 0 10px;
 }
 
 /******** GRID DIAS *********/

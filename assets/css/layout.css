@@ -1,5 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-primaria: #0b57d0;
+  --cor-secundaria: #03a9f4;
+  --cor-simples: #444;
+}
+
+body {
+  background-color: #ebedf1;
+  font-family: "Roboto", sans-serif;
+}
+
 h1 {
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
+  text-align: center;
+  color: var(--cor-simples);
 }
 h2 {
 }
@@ -10,6 +25,23 @@ h4 {
 h5 {
   font-size: 14px !important;
   color: red;
+  margin: 0;
+}
+
+label {
+  font-size: 14px !important;
+  color: #999;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.a-primay {
+  text-decoration: none;
+  color: #444;
+}
+.a-primay:hover {
+  text-decoration: none;
+  color: #0a0aff;
 }
 
 /******** MARGIN *********/
@@ -38,7 +70,7 @@ h5 {
   border: 1px solid #ccc;
 }
 .input:hover {
-  box-shadow: 0 0 6px #999;
+  box-shadow: 0 0 6px #ccc;
   border: 1px solid #777;
 }
 
@@ -57,11 +89,13 @@ h5 {
 }
 
 /******** ESTRUTURA *********/
-.box-page {
-  border: 0 solid #e1e1e1;
-  width: 80%;
-  min-width: 300px;
-  margin: 5% auto;
+.content {
+  max-width: 425px;
+  border: #00ba06 0 solid;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /******** ESTRUTURA RESPONSIVA *********/

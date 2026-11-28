@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="box-page">
+  <div class="content">
     <header>
       <div class="col12"><img src="assets/img/logo.png" alt="logo" class="logoEst" /></div>
       <h1>Recuperar senha</h1><br />
@@ -18,12 +18,15 @@
     <main>
 
       <form>
-        <div class="col12 mb"><input type="email" name="email" class="input" /></div>
+        <div class="col12 mb">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required name="email" class="input" />
+        </div>
         <div class="col12 mb"><input class="button" type="submit" value="ENVIAR" /></div>
       </form>
 
     </main>
-    <h5><a href="index.php">Entrar no sistema</a></h5>
+    <h5 style="text-align: center;"><a href="login" class="a-primay">Entrar no sistema</a></h5>
 
   </div>
 
